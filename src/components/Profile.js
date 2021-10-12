@@ -101,20 +101,17 @@ function Profile() {
                   This is your profile page. You can see the progress you've
                   made with your work and manage your projects or assigned tasks
                 </p>
-                <a href="#!" className="btn btn-info">
-                  Edit profile
-                </a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="container-fluid mt--7">
-          <div className="row">
-            <div className="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div className="row mb-4">
+            {/* <div className="col-xl-4 order-xl-2 mb-5 mb-xl-0">
               <div className="card card-profile shadow">
                 <div className="d-flex justify-content-center">
-                  <div className="card-profile-image">
+                  <div className="card-profile-image mb-2">
                     <img
                       src="https://demos.creative-tim.com/argon-dashboard/assets/img/theme/team-4.jpg"
                       alt="Avatar"
@@ -122,30 +119,9 @@ function Profile() {
                     />
                   </div>
                 </div>
-                {/* <div className="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-              <div className="d-flex justify-content-between">
-                <a href="#" className="btn btn-sm btn-info mr-4">Connect</a>
-                <a href="#" className="btn btn-sm btn-default float-right">Message</a>
-              </div>
-            </div> */}
                 <div className="card-body pt-0 pt-md-4">
                   <div className="row">
-                    <div className="col">
-                      {/* <div className="card-profile-stats d-flex justify-content-center mt-md-5">
-                    <div>
-                      <span className="heading">22</span>
-                      <span className="description">Friends</span>
-                    </div>
-                    <div>
-                      <span className="heading">10</span>
-                      <span className="description">Photos</span>
-                    </div>
-                    <div>
-                      <span className="heading">89</span>
-                      <span className="description">Comments</span>
-                    </div>
-                  </div> */}
-                    </div>
+                    <div className="col"></div>
                   </div>
                   <div className="text-center">
                     <h3>Jessica Jones</h3>
@@ -159,29 +135,16 @@ function Profile() {
                       <i className="ni education_hat mr-2"></i>University of
                       Computer Science
                     </div>
-                    {/* <hr className="my-4"/>
-                <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
-                <a href="#">Show more</a> */}
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-8 order-xl-1">
-              <div className="card bg-secondary shadow">
-                {/* <div className="card-header bg-white border-0">
-              <div className="row align-items-center">
-                <div className="col-8">
-                  <h3 className="mb-0">My account</h3>
-                </div>
-                <div className="col-4 text-right">
-                  <a href="#!" className="btn btn-sm btn-primary">Settings</a>
-                </div>
-              </div>
             </div> */}
+            <div className="col-xl-8 order-xl-1 mb-4">
+              <div className="card bg-secondary shadow">
                 <div className="card-body">
                   <form>
                     <h6 className="heading-small text-muted mb-4">
-                      User information
+                      My details
                     </h6>
                     <div className="pl-lg-4">
                       <div className="row">
@@ -197,8 +160,8 @@ function Profile() {
                               type="text"
                               id="input-username"
                               className="form-control form-control-alternative"
-                              placeholder="Username"
-                              value="lucky.jesse"
+                              placeholder="e.g lucky.jesse"
+                              defaultValue="Jesse"
                             />
                           </div>
                         </div>
@@ -214,7 +177,8 @@ function Profile() {
                               type="email"
                               id="input-email"
                               className="form-control form-control-alternative"
-                              placeholder="jesse@example.com"
+                              placeholder="e.g jesse@example.com"
+                              defaultValue="jesse@yopmail.com"
                             />
                           </div>
                         </div>
@@ -226,14 +190,14 @@ function Profile() {
                               className="form-control-label"
                               htmlFor="input-first-name"
                             >
-                              First name
+                              Phone number
                             </label>
                             <input
-                              type="text"
-                              id="input-first-name"
+                              type="number"
+                              id="input-phone-number"
                               className="form-control form-control-alternative"
-                              placeholder="First name"
-                              value="Lucky"
+                              placeholder="E.g 3230932423434"
+                              defaultValue="3230932423434"
                             />
                           </div>
                         </div>
@@ -241,61 +205,29 @@ function Profile() {
                           <div className="form-group focused">
                             <label
                               className="form-control-label"
-                              htmlFor="input-last-name"
+                              htmlFor="input-first-name"
                             >
-                              Last name
+                              Interest
                             </label>
                             <input
                               type="text"
-                              id="input-last-name"
+                              id="input-interest"
                               className="form-control form-control-alternative"
-                              placeholder="Last name"
-                              value="Jesse"
+                              placeholder="e.g Ice Hockey"
+                              defaultValue="Ice Hockey"
                             />
                           </div>
                         </div>
                       </div>
-                    </div>
-                    {/* <hr className="my-4"/>
-                <h6 className="heading-small text-muted mb-4">Contact information</h6>
-                <div className="pl-lg-4"> */}
-                    {/* <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group focused">
-                        <label className="form-control-label" htmlFor="input-address">Address</label>
-                        <input id="input-address" className="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text"/>
+                      <div className="row my-2">
+                        <div className="col-lg-6">
+                          <a href="#!" className="btn btn-primary">
+                            Save changes
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div> */}
-                    <div className="row">
-                      {/* <div className="col-lg-4">
-                      <div className="form-group focused">
-                        <label className="form-control-label" htmlFor="input-city">City</label>
-                        <input type="text" id="input-city" className="form-control form-control-alternative" placeholder="City" value="New York"/>
-                      </div>
-                    </div> */}
-                      {/* <div className="col-lg-4">
-                      <div className="form-group focused">
-                        <label className="form-control-label" htmlFor="input-country">Country</label>
-                        <input type="text" id="input-country" className="form-control form-control-alternative" placeholder="Country" value="United States"/>
-                      </div>
-                    </div> */}
-                      {/* <div className="col-lg-4">
-                      <div className="form-group">
-                        <label className="form-control-label" htmlFor="input-country">Postal code</label>
-                        <input type="number" id="input-postal-code" className="form-control form-control-alternative" placeholder="Postal code"/>
-                      </div>
-                    </div> */}
-                    </div>
-                    {/* </div> */}
-                    {/* <hr className="my-4"/>
-                <h6 className="heading-small text-muted mb-4">About me</h6> */}
-                    {/* <div className="pl-lg-4">
-                  <div className="form-group focused">
-                    <label>About Me</label>
-                    <textarea rows="4" className="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
-                  </div>
-                </div> */}
+                    <div className="row"></div>
                   </form>
                 </div>
               </div>
@@ -303,15 +235,6 @@ function Profile() {
           </div>
         </div>
       </div>
-      {/* <footer className="footer">
-    <div className="row align-items-center justify-content-xl-between">
-      <div className="col-xl-6 m-auto text-center">
-        <div className="copyright">
-          <p>Made with <a href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Argon Dashboard</a> by Creative Tim</p>
-        </div>
-      </div>
-    </div>
-  </footer> */}
     </div>
   );
 }
